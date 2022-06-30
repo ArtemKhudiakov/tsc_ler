@@ -14,3 +14,17 @@ const obj2 = {
     z: 4,
 }
 printPoint(obj2)
+
+function printName(user: {
+    firstName: string,
+    lastName?: string,
+}): void {
+    console.log('Hello', user.firstName.toUpperCase());
+
+    if (user.lastName) {
+        console.log('Nice to meet you Mr.', user.lastName.toUpperCase());
+    }
+}
+
+printName({firstName: 'Mikhail'})
+printName({firstName: 'Mikhail', lastName: 'Nep'})
