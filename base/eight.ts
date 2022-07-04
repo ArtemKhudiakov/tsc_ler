@@ -10,3 +10,13 @@ function printId(id: number | string): void {
     else
         console.log(id)
 }
+
+function welcome(person: [string, string] | string): number | string {
+    if (Array.isArray(person)) {
+        console.log('Hello', person.join(' '))
+        return 1
+    } else {
+        console.log('Hello', person);
+        return person;
+    }
+}
