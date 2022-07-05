@@ -31,3 +31,23 @@ enum Grades {
     Middle = 'middle',
     Senior = 'senior'
 }
+
+interface Dev {
+    login: string,
+    skills: string[],
+    level: Grades,
+}
+
+const dev2: Dev = {
+    level: Grades.Junior,
+    login: 'michey',
+    skills: ['HTML', 'CSS', 'JS'],
+}
+
+function upGrade(user: { level: Grades }) {
+    if (user.level === Grades.Junior) {
+        user.level = Grades.Middle
+    } else if (user.level === Grades.Middle) {
+        user.level = Grades.Senior
+    }
+}
