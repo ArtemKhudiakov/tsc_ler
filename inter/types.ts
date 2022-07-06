@@ -16,3 +16,19 @@ type Person = {
     phone?: string,
     yearOfBirth?: number,
 }
+
+type Employee = {
+    contractStart: Date,
+} & User & Person
+
+// const user1: Employee = {}
+
+type Developer = {
+    skills: string[],
+    phone: string,
+    level?: 'junior' | 'middle' | 'senior',
+    say(): void,
+    code?: (arg: string) => void,
+} & Employee
+
+export {};
