@@ -32,3 +32,20 @@ type Developer = {
 } & Employee
 
 export {};
+
+
+//tasks
+
+interface Order {
+    address: string;
+}
+
+interface TelephoneOrder extends Order {
+    callerNumber: string;
+}
+
+interface InternetOrder extends Order {
+    email: string;
+}
+
+type PossibleOrders = TelephoneOrder | InternetOrder | undefined;
