@@ -9,3 +9,14 @@ function example1(x?: number | string) {
         x
     }
 }
+
+
+function example2(strs: string | string[] | null) {
+    // if (typeof strs === "object") {}
+    // if (Array.isArray(strs)) {
+    if (strs && typeof strs === "object") {
+        strs.concat([])
+    } else if (typeof strs === "string") {
+        strs.toLowerCase()
+    }
+}
