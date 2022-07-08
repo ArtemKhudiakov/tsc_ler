@@ -31,7 +31,6 @@ interface Developer {
     level: Level,
 }
 
-
 function gradeDeveloper(user: { level: Level }, /* newLevel: Level */) {
     // user.level = newLevel;
     if (user.level === 'junior') {

@@ -21,8 +21,6 @@ type Employee = {
     contractStart: Date,
 } & User & Person
 
-// const user1: Employee = {}
-
 type Developer = {
     skills: string[],
     phone: string,
@@ -32,7 +30,6 @@ type Developer = {
 } & Employee
 
 export {};
-
 
 //tasks
 
@@ -84,8 +81,6 @@ interface ICar extends IProduct, IVehicle {
     model: string,
 }
 
-// const icar1: ICar = {}
-
 type Product = {
     title: string,
     price: number,
@@ -103,7 +98,6 @@ type Car = Product & Vehicle & {
     type: string,
     model: string,
 }
-
 
 export {}
 

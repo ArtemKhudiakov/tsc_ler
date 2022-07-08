@@ -10,7 +10,6 @@ function example1(x?: number | string) {
     }
 }
 
-
 function example2(strs: string | string[] | null) {
     // if (typeof strs === "object") {}
     // if (Array.isArray(strs)) {
@@ -36,7 +35,6 @@ function move(animal: Fish | Bird) {
     if ('swim' in animal) {
         return animal.swim()
     }
-
     return animal.fly();
 }
 

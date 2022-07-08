@@ -66,6 +66,7 @@ const admin1: Admin = {
 
 // Create a function login with param user (with keys login and password)
 // Check if login and password are not empty and then greet user
+
 function login(user: { login: string, password: string }) {
     if (user.login.length > 0, user.password.length > 0) {
         console.log('Hello', user.login)

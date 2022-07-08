@@ -3,6 +3,7 @@ function sum(a: number, b: number) {
 }
 
 const sum2 = (a: number, b: number): number => a + b;
+
 const sum3 = function (a: number, b: number): number {
     return a + b;
 }
@@ -40,3 +41,4 @@ function slice(str: string, start: number, end?: number): string {
 
     return newStr;
 }
+
