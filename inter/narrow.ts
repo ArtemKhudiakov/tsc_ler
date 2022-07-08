@@ -20,3 +20,11 @@ function example2(strs: string | string[] | null) {
         strs.toLowerCase()
     }
 }
+
+function example3(x: number[] | Date) {
+    if (x instanceof Date) {
+        x.getMonth();
+    } else {
+        x.concat([])
+    }
+}
