@@ -14,3 +14,4 @@ function myClickHandler(
     this.disabled = true;
 }
 
+
