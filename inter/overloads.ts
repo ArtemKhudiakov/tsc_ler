@@ -5,3 +5,21 @@ function add(a: any, b: any): any {
 }
 
 add(1, 1)
+
+type asyncCb = (res: number) => number;
+
+function asyncSum(a: number, b: number): Promise<number>;
+function asyncSum(a: number, b: number, cb: asyncCb): number;
+function asyncSum(a: number, b: number, cb?: asyncCb): any {
+    const result = a + b;
+    if (cb) {
+        return cb(result)
+    }
+
+    // @ts-ignore
+    return Promise.resolve(result);
+}
+
+asyncSum(1, 2)
+
+export {}
