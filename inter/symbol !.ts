@@ -6,3 +6,7 @@ if (num > 5) {
 }
 
 console.log(word!.toLowerCase())
+
+export function printName(name?: string) {
+    const fullName: string = name!;
+}
